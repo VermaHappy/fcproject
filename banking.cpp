@@ -166,7 +166,397 @@ void write_account()
 	account ac;
 	ofstream outFile;
 	outFile.open("account.dat",ios::binary|ios::app);
-	ac.create_account();
+	ac.create_account();toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+toupper(type);
+	cout<<"\nEnter The amount : ";
+	cin>>deposit;
+}
+
+
+
+void account::dep(int x)
+{
+	deposit+=x;
+}
+
+void account::draw(int x)
+{
+	deposit-=x;
+}
+
+void account::report()
+{
+	cout<<acno<<setw(10)<<" "<<name<<setw(10)<<" "<<type<<setw(6)<<deposit<<endl;
+}
+
+int account::retacno()
+{
+	return acno;
+}
+
 	outFile.write((char *) &ac, sizeof(account));
 	outFile.close();
 }
