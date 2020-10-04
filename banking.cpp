@@ -101,20 +101,7 @@ char account::rettype()
 }
 
 
-//***************************************************************
-//    	function declaration
-//****************************************************************
-void write_account();	//function to write record in binary file
-void display_sp(int);	//function to display account details given by user
-void modify_account(int);	//function to modify record of file
-void delete_account(int);	//function to delete record of file
-void display_all();		//function to display all account details
-void deposit_withdraw(int, int); // function to desposit/withdraw amount for given account
-void intro();	//introductory screen function
-
-//***************************************************************
-//    	THE MAIN FUNCTION OF PROGRAM
-//****************************************************************
+/************************
 
 int main()
 {
@@ -126,13 +113,7 @@ int main()
 	{
 		clrscr();
 		cout<<"\n\n\n\tMAIN MENU";
-		cout<<"\n\n\t01. NEW ACCOUNT";
-		cout<<"\n\n\t02. DEPOSIT AMOUNT";
-		cout<<"\n\n\t03. WITHDRAW AMOUNT";
-		cout<<"\n\n\t04. BALANCE ENQUIRY";
-		cout<<"\n\n\t05. ALL ACCOUNT HOLDER LIST";
-		cout<<"\n\n\t06. CLOSE AN ACCOUNT";
-		cout<<"\n\n\t07. MODIFY AN ACCOUNT";
+		cout<<"CCOUNT";
 		cout<<"\n\n\t08. EXIT";
 		cout<<"\n\n\tSelect Your Option (1-8) ";
 		cin>>ch;
@@ -210,27 +191,6 @@ void display_sp(int n)
 	{
 		if(ac.retacno()==n)
 		{
-			ac.show_account();
-			flag=1;
-		}
-	}
-    inFile.close();
-	if(flag==0)
-		cout<<"\n\nAccount number does not exist";
-}
-
-
-//***************************************************************
-//    	function to modify record of file
-//****************************************************************
-
-void modify_account(int n)
-{
-	int found=0;
-	account ac;
-	fstream File;
-    File.open("account.dat",ios::binary|ios::in|ios::out);
-	if(!File)
 	{
 		cout<<"File could not be open !! Press any Key...";
 		return;
@@ -264,13 +224,7 @@ void delete_account(int n)
 	account ac;
 	ifstream inFile;
 	ofstream outFile;
-	inFile.open("account.dat",ios::binary);
-	if(!inFile)
-	{
-		cout<<"File could not be open !! Press any Key...";
-		return;
-	}
-	outFile.open("Temp.dat",ios::binary);
+	inFi:binary);
 	inFile.seekg(0,ios::beg);
 	while(inFile.read((char *) &ac, sizeof(account)))
 	{
@@ -359,6 +313,17 @@ void deposit_withdraw(int n, int option)
 	 }
     File.close();
 	if(found==0)
+	
+	{
+		cout<<"File could not be open !! Press any Key...";
+		return;
+	}
+    while(File.read((char *) &ac, sizeof(account)) && found==0)
+	{
+		if(ac.retacno()==n)
+		{
+			ac.show_account();
+			if(option=0)
 		cout<<"\n\n Record Not Found ";
 }
 
